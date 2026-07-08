@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
         <title>
             Time Chimes
         </title>
@@ -8,5 +11,12 @@
         <h1>
             Time Chimes
         </h1>
+        <p id="time"></p>
+        <p id="minute"></p>
+        <audio id="hourMelody" src="audio/0004.mp3"></audio>
+        <audio id="quarterMelody" src="audio/0001.mp3"></audio>
+        <audio id="halfMelody" src="audio/0002.mp3"></audio>
+        <audio id="threeQuarterMelody" src="audio/0003.mp3"></audio>
+        <button onclick="getTime()">Start sounds</button>
     </body>
 </html>
