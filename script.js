@@ -14,11 +14,13 @@ function alarm() {
   const quarterMelody = document.getElementById("quarterMelody");
   const halfMelody = document.getElementById("halfMelody");
   const threeQuarterMelody = document.getElementById("threeQuarterMelody");
-  const minute = 0
+  const hourChime = document.getElementById("hourChime");
+  const hourFinal = document.getElementById("hourFinal");
+  const minute = new Date().getMinutes();
   if (minute === 0) {
     hourMelody.play();
   }
-  if (minute === 15) {
+  if (minute === 15) { 
     quarterMelody.play();
   }
   if (minute === 30) {
