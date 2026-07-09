@@ -3,15 +3,14 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
-        <title>
-            Time Chimes
-        </title>
+        <title id="title"></title>
     </head>
     <body>
         <h1>
             Time Chimes
         </h1>
         <p id="time"></p>
+        <p id="second"></p>
         <p id="minute"></p>
         <p id="hour"></p>
         <audio id="hourMelody" src="audio/0004.mp3"></audio>
@@ -20,6 +19,6 @@
         <audio id="threeQuarterMelody" src="audio/0003.mp3"></audio>
         <audio id="hourChime" src="audio/0005.mp3"></audio>
         <audio id="hourFinal" src="audio/0006.mp3"></audio>
-        <button onclick="alarm()">Start sounds</button>
+        <button onclick="alarm(); hourAlarm();">Start sounds</button>
     </body>
 </html>
